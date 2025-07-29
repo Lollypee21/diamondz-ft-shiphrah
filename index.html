@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <title>login</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #c037a9,#711788);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100hv;
+            margin: 50px;
+            
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #21254a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            height: 400px;
+        }
+
+        h2 {
+            color: white;
+            text-align: left;
+            font-family: sans-serif;
+            font-weight:100;
+        }
+
+        label {
+            font-size: 1.2em;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            background: transparent;
+            border-bottom: solid 1px grey;
+        }
+
+        button{
+            width: 40%;
+            padding: 5px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(to right, #c037a9,#9511b6);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        p{
+            color: white;
+            font-size: 0.7em;
+        }
+
+        .below{
+            
+            margin-top: 30px;
+        }
+
+        a{
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        
+        <form action="#">
+            <h2>Hello there, <br> welcome back</h2>
+            <label for="email"></label>
+            <input type="email" name="email" id="email" required placeholder="E-mail">
+
+            <label for="password"></label>
+            <input type="password" name="pWord" id="pWord" required placeholder="Password">
+
+            <p>
+                <a href="#">Forgot your Password?</a>
+            </p>
+
+            <button>Sign In</button>
+
+            <p class="below">New here? <a href="singup.html">Sign Up Instead</a></p>
+        </form>
+    </div>
+</body>
+</html>
